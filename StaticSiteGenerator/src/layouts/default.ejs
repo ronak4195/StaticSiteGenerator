@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <section class="page-header">
+        <h1 class="project-name">
+            <%= site.title %>
+        </h1>
+        <h2 class="project-tagline">
+            <%= site.description %>
+        </h2>
+        <a href="<%= site.basePath %>/StaticSiteGenerator/public/" class="btn">Home</a>
+        <a href="<%= site.basePath %>/StaticSiteGenerator/public/anotherpage" class="btn">Another Page</a>
+        <a href="<%= site.basePath %>/StaticSiteGenerator/public/ejspage" class="btn">EJS Page</a>
+        <a href="<%= site.basePath %>/StaticSiteGenerator/public/htmlpage" class="btn">HTML Page</a>
+        <a href="https://github.com/ronak4195" class="btn">GitHub</a>
+    </section>
+
+    <section class="main-content">
+        <%- body %>
+
+            <footer class="site-footer">
+                <span class="site-footer-credits">Made with Love by <a
+                        href="https://github.com/ronak4195">Ronak4195</a>.</span>
+            </footer>
+    </section>
+</body>
+
+</html>
